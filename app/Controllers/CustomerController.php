@@ -7,12 +7,6 @@ use CodeIgniter\Controller;
 class CustomerController extends Controller
 {
 
-    public function try_login(): string
-    {
-        helper(['form']);
-        return view('login');
-    }
-
 
 
     public function index(): string
