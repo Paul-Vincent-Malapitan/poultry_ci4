@@ -21,7 +21,7 @@
                 <?php endif;?>
 
                 <!-- Form Open with CodeIgniter -->
-                <?= form_open('/login/auth'); ?>
+                <?= form_open('/login_user/auth'); ?>
                     <div class="mb-3">
                         <label for="InputForEmail" class="form-label">Email address</label>
                         <!-- Using form_input for CSRF protection and set_value for repopulating input -->

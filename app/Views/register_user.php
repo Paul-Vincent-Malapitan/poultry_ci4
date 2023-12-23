@@ -22,30 +22,47 @@
                 <?php endif;?>
 
                 <!-- Form Open with CodeIgniter -->
-                <?= form_open('/register/save'); ?>
+                <?= form_open('/register_user/save'); ?>
                     <div class="mb-3">
                         <label for="InputForName" class="form-label">Name</label>
                         <!-- Using form_input for CSRF protection and set_value for repopulating input -->
                         <?= form_input('name', set_value('name'), 'class="form-control" id="InputForName"'); ?>
                     </div>
+
                     <div class="mb-3">
-                        <label for="InputForEmail" class="form-label">Email address</label>
+                        <label for="InputForEmail" class="form-label">Email Address</label>
                         <!-- Using form_input for CSRF protection and set_value for repopulating input -->
                         <?= form_input('email', set_value('email'), 'class="form-control" id="InputForEmail"'); ?>
                     </div>
+
                     <div class="mb-3">
                         <label for="InputForPassword" class="form-label">Password</label>
                         <!-- Using form_password for password input -->
                         <?= form_password('password', '', 'class="form-control" id="InputForPassword"'); ?>
                     </div>
+
+                    <div class="mb-3">
+                        <label for="InputForEmail" class="form-label">Address</label>
+                        <!-- Using form_input for CSRF protection and set_value for repopulating input -->
+                        <?= form_input('address', set_value('address'), 'class="form-control" id="InputForAddress"'); ?>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="InputForContact" class="form-label">Contact</label>
+                        <!-- Using form_input for CSRF protection and set_value for repopulating input -->
+                        <?= form_input('contact', set_value('contact'), 'class="form-control" id="InputForContact"'); ?>
+                    </div>
+
                     <div class="mb-3">
                         <label for="InputForConfPassword" class="form-label">Confirm Password</label>
                         <!-- Using form_password for password input -->
                         <?= form_password('confpassword', '', 'class="form-control" id="InputForConfPassword"'); ?>
                     </div>
+
                     <!-- Using form_submit for the submit button -->
                     <?= form_submit('submit', 'Register', 'class="btn btn-primary"'); ?>
                 <?= form_close(); ?>
+
                 <!-- Form Close with CodeIgniter -->
             </div>
             
